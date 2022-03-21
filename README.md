@@ -4,7 +4,7 @@
 
 # Hi there 👋
 
-### I'm BK201-Drama<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact">
+### I'm BK201-Drama<img align="right" src="https://bk201-drama.github.io/archives">
 - 👨‍💻A Frontend Novice
 - 🌱`HTML & CSS & JS & React`
 - 🔭Welcome to my blog：[bk201-drama.github.io](https://bk201-drama.github.io/)
