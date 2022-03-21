@@ -12,4 +12,4 @@
 
 ### My contribution
 
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true" style="display: inline-block"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact" style="display: inline-block">
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true" style="display: table"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact" style="display: table">
