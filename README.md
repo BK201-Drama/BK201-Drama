@@ -9,8 +9,8 @@
 - 🌱`HTML & CSS & JS & React`
 - 🔭Welcome to my blog：[bk201-drama.github.io](https://bk201-drama.github.io/)
 
----
 
 ### My contribution
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact">
