@@ -4,10 +4,11 @@
 
 # Hi there 👋
 
-### I'm BK201-Drama<img align="right" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
--  👨‍💻一名前端菜鸟
+### I'm BK201-Drama<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact">
+- 👨‍💻A Frontend Novice
 - 🌱`HTML & CSS & JS & React`
-- 🔭欢迎来到我的博客：[https://bk201-drama.github.io](https://bk201-drama.github.io/)
+- 🔭Welcome to my blog：[bk201-drama.github.io](https://bk201-drama.github.io/)
+- 
+### My contribution
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact)](https://github.com/BK201-Drama/github-readme-stats)
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BK201-Drama&layout=compact">
+<img src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
