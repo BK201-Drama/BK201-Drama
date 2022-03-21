@@ -2,7 +2,7 @@
 **BK201-Drama/BK201-Drama** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
-# Hi there 👋<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg">
+# Hi there 👋<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" style="width: 200px; height: 200px">
 
 ### I'm BK201-Drama
 - 👨‍💻A Frontend Novice
