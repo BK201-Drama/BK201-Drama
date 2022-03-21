@@ -4,7 +4,7 @@
 
 # Hi there 👋
 
-### I'm BK201-Drama<img align="right" src="https://bk201-drama.github.io/archives">
+### I'm BK201-Drama<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg">
 - 👨‍💻A Frontend Novice
 - 🌱`HTML & CSS & JS & React`
 - 🔭Welcome to my blog：[bk201-drama.github.io](https://bk201-drama.github.io/)
