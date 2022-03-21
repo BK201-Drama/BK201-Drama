@@ -8,7 +8,7 @@
 - 👨‍💻A Frontend Novice
 - 🌱`HTML & CSS & JS & React`
 - 🔭Welcome to my blog：[bk201-drama.github.io](https://bk201-drama.github.io/)
-- 
+
 ### My contribution
 
-<img src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=BK201-Drama&show_icons=true">
