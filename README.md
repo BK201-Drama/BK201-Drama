@@ -9,3 +9,4 @@
 - 🌱`HTML & CSS & JS & React`
 - 🔭欢迎来到我的博客：[https://bk201-drama.github.io](https://bk201-drama.github.io/)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
