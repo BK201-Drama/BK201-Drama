@@ -10,6 +10,20 @@
 
 [Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
 
+### 个人背景
+
+**华南理工大学 · 软件学院**
+
+> 2019.09 – 2023.06
+
+2019年9月入学，2023年6月毕业。
+
+**WeRide（文远知行）· weval 组**
+
+> 2022.06 – 至今
+
+2022年6月入职，现于 weval 组。
+
 <br clear="all" />
 
 ## About
