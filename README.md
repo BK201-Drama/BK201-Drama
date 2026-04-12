@@ -15,12 +15,12 @@
 
 ## GitHub stats
 
-<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%" frame="void" rules="none">
+<table border="0" cellspacing="6" cellpadding="0" align="center" width="100%" frame="void" rules="none">
 <tr>
-<td width="50%" align="center" valign="top">
+<td width="45%" align="center" valign="top">
 <img src="./profile/stats.svg" width="100%" alt="GitHub stats" />
 </td>
-<td width="50%" align="center" valign="top">
+<td width="55%" align="center" valign="top">
 <img src="./profile/top-langs.svg" width="100%" alt="Most used languages" />
 </td>
 </tr>
