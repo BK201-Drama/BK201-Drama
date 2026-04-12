@@ -1,15 +1,15 @@
 
       <svg
-        width="467"
-        height="195"
-        viewBox="0 0 467 195"
+        width="520"
+        height="213"
+        viewBox="0 0 520 213"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
         <title id="titleId">BK201-Drama's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 107, Total PRs: 2, Total Issues: 1, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 109, Total PRs: 2, Total Issues: 1, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 213.4449260958304;
+        stroke-dashoffset: 213.27275523311692;
       }
     }
   
@@ -110,7 +110,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="466"
+          width="519"
           fill="#fffefe"
           stroke-opacity="0"
         />
@@ -137,7 +137,7 @@
         >
           
     <g data-testid="rank-circle"
-          transform="translate(390.5, 47.5)">
+          transform="translate(443.5, 56.5)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
         <g class="rank-text">
@@ -164,7 +164,7 @@
         data-testid="stars"
       >12</text>
     </g>
-  </g><g transform="translate(0, 25)">
+  </g><g transform="translate(0, 28)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
       
     <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -177,9 +177,9 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >107</text>
+      >109</text>
     </g>
-  </g><g transform="translate(0, 50)">
+  </g><g transform="translate(0, 56)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
       
     <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -194,7 +194,7 @@
         data-testid="prs"
       >2</text>
     </g>
-  </g><g transform="translate(0, 75)">
+  </g><g transform="translate(0, 84)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
       
     <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -209,7 +209,7 @@
         data-testid="issues"
       >1</text>
     </g>
-  </g><g transform="translate(0, 100)">
+  </g><g transform="translate(0, 112)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
       
     <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
