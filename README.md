@@ -6,36 +6,9 @@
 
 <img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="160" alt="BK201-Drama" />
 
-**Full-stack engineer** — **React**, **NestJS**, **Django**. I like clear interfaces, dependable APIs, and tools that actually get used.
+**Full-stack** · React · NestJS · Django · [Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
 
-[Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
-
-### Background
-
-<table border="0" cellspacing="0" cellpadding="0" width="100%" frame="void" rules="none">
-<tr valign="top">
-<td width="50%">
-
-**Education**  
-**South China University of Technology** · Software Engineering  
-
-> Sep 2019 – Jun 2023  
-
-B.Eng., Software Engineering
-
-</td>
-<td width="50%">
-
-**Work**  
-**WeRide** · weval team  
-
-> Jun 2022 – present  
-
-Joined Jun 2022
-
-</td>
-</tr>
-</table>
+**2019.09–2023.06** · South China University of Technology, Software Engineering, B.Eng. · **2022.06–present** · WeRide · weval
 
 <br clear="all" />
 
