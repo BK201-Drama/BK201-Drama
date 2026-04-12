@@ -12,17 +12,30 @@
 
 ### Background
 
-**South China University of Technology · School of Software Engineering**
+<table border="0" cellspacing="0" cellpadding="0" width="100%" frame="void" rules="none">
+<tr valign="top">
+<td width="50%">
 
-> Sep 2019 – Jun 2023
+**Education**  
+**South China University of Technology** · Software Engineering  
 
-Enrolled September 2019; graduated June 2023.
+> Sep 2019 – Jun 2023  
 
-**WeRide · weval team**
+B.Eng., Software Engineering
 
-> Jun 2022 – present
+</td>
+<td width="50%">
 
-Joined June 2022; currently on the weval team.
+**Work**  
+**WeRide** · weval team  
+
+> Jun 2022 – present  
+
+Joined Jun 2022
+
+</td>
+</tr>
+</table>
 
 <br clear="all" />
 
