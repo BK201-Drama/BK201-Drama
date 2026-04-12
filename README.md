@@ -53,26 +53,6 @@ Short notes on the blog when something is worth capturing.
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
 </p>
 
-## Featured projects
-
-### Brainstorm
-
-AI-assisted idea generation and organization.
-
-### Trend Calendar Tool
-
-Track and plan trend topics.
-
-### DObsidian
-
-PKM experiments around Obsidian.
-
-### Base-Boilerplate
-
-Reusable starter for new repos.
-
-[See all repositories](https://github.com/BK201-Drama?tab=repositories)
-
 ## GitHub stats
 
 <p align="center">
