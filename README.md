@@ -15,17 +15,9 @@
 
 ## About
 
-### What I build
+At **WeRide** on the **weval** team, I work full-stack: **React** and **TypeScript** on the UI, **NestJS** / **Django** for services and APIs — shipping in small iterations, keeping contracts between layers explicit, and favoring code that the next person can actually change safely.
 
-End-to-end work from UI to APIs.
-
-### What I care about
-
-Product thinking, interaction details, backend design, and performance.
-
-### Writing
-
-Short notes on the blog when something is worth capturing.
+Outside work I keep experiments in public repos and longer write-ups on my [blog](https://bk201-drama.github.io/) when a topic is worth writing down in detail.
 
 ## Tech stack
 
