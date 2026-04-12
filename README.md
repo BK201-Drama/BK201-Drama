@@ -55,11 +55,16 @@ Short notes on the blog when something is worth capturing.
 
 ## GitHub stats
 
-<p align="center">
-  <img src="./profile/stats.svg" height="200" alt="GitHub stats" />
-  &nbsp;&nbsp;
-  <img src="./profile/top-langs.svg" height="200" alt="Top languages" />
-</p>
+<table align="center">
+<tr>
+<td width="50%" align="center" valign="top">
+<img src="./profile/stats.svg" width="100%" alt="GitHub stats" />
+</td>
+<td width="50%" align="center" valign="top">
+<img src="./profile/top-langs.svg" width="100%" alt="Most used languages" />
+</td>
+</tr>
+</table>
 
 Stats cards are regenerated from GitHub Actions (**Actions → Update README cards**).
 
