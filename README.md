@@ -8,8 +8,8 @@
 
 **Full-stack** · React · NestJS · Django · [Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
 
-- **2019.09–2023.06** — South China University of Technology, Software Engineering (B.Eng.)
-- **2022.06–present** — WeRide · weval
+- **2019.09–2023.06**: South China University of Technology, Software Engineering (B.Eng.)
+- **2022.06–present**: WeRide · weval
 
 <br clear="all" />
 
