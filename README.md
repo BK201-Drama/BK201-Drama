@@ -2,7 +2,7 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
 <td valign="top">
 
@@ -55,7 +55,7 @@ Short notes on the blog when something is worth capturing.
 
 ## GitHub stats
 
-<table align="center">
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
 <tr>
 <td width="50%" align="center" valign="top">
 <img src="./profile/stats.svg" width="100%" alt="GitHub stats" />
