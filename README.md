@@ -36,7 +36,7 @@ Outside work I keep experiments in public repos and longer write-ups on my [blog
 
 ## Tech stack
 
-<table align="center" border="0" cellspacing="0" cellpadding="0" frame="void" rules="none">
+<table align="left" border="0" cellspacing="0" cellpadding="0" frame="void" rules="none">
 <tr valign="middle">
 <td align="right" valign="middle" nowrap><strong>Frontend:</strong>&nbsp;</td>
 <td align="left" valign="middle">
