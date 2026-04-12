@@ -2,24 +2,15 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%" frame="void" rules="none">
-<tr>
-<td valign="top">
+# BK201-Drama
 
-# Hi, I'm BK201-Drama
+<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="160" alt="BK201-Drama" />
 
 **Full-stack engineer** — **React**, **NestJS**, **Django**. I like clear interfaces, dependable APIs, and tools that actually get used.
 
 [Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
 
-</td>
-<td valign="top" align="right" width="180">
-
-<img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="160" alt="BK201-Drama" />
-
-</td>
-</tr>
-</table>
+<br clear="all" />
 
 ## About
 
