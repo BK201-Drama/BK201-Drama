@@ -26,8 +26,6 @@
 </tr>
 </table>
 
-Cards refresh via GitHub Actions (**Actions → Update README cards**).
-
 ## About
 
 At **WeRide** on the **weval** team, I work full-stack: **React** and **TypeScript** on the UI, **NestJS** / **Django** for services and APIs — shipping in small iterations, keeping contracts between layers explicit, and favoring code that the next person can actually change safely.
@@ -58,5 +56,3 @@ Outside work I keep experiments in public repos and longer write-ups on my [blog
 </td>
 </tr>
 </table>
-
-If you want to collaborate or trade notes, open an **issue** or a **discussion**.
