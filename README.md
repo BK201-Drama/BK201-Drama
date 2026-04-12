@@ -26,12 +26,6 @@
 </tr>
 </table>
 
-## About
-
-At **WeRide** on the **weval** team, I work full-stack: **React** and **TypeScript** on the UI, **NestJS** / **Django** for services and APIs — shipping in small iterations, keeping contracts between layers explicit, and favoring code that the next person can actually change safely.
-
-Outside work I keep experiments in public repos and longer write-ups on my [blog](https://bk201-drama.github.io/) when a topic is worth writing down in detail.
-
 ## Tech stack
 
 <table align="left" border="0" cellspacing="0" cellpadding="0" frame="void" rules="none">
