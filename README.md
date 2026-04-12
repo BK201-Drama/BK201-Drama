@@ -95,8 +95,8 @@
   <img src="./profile/top-langs.svg" width="39%" alt="Top languages" />
 </p>
 
-<sub><strong>EN</strong> · Stats cards are generated as static SVGs via GitHub Actions (avoids flaky public <code>github-readme-stats.vercel.app</code>). After the first push, wait for the workflow or open <strong>Actions → Update README cards → Run workflow</strong>.</sub><br />
-<sub><strong>中文</strong> · 统计卡片由 GitHub Actions 生成静态 SVG（避免公共 Vercel 实例不稳定）。首次推送后请等待工作流完成，或在 <strong>Actions → Update README cards</strong> 里手动运行。</sub>
+<sub><strong>EN</strong> · Stats cards are generated as static SVGs via GitHub Actions (the public <code>github-readme-stats.vercel.app</code> endpoint is best-effort and often times out). Refresh: <strong>Actions → Update README cards → Run workflow</strong> (also runs on a daily schedule).</sub><br />
+<sub><strong>中文</strong> · 统计卡片由 GitHub Actions 生成静态 SVG（公共 <code>github-readme-stats.vercel.app</code> 经常超时或限流）。更新方式：<strong>Actions → Update README cards → Run workflow</strong>（另有每日定时）。</sub>
 
 ## 🎯 2026 Focus · 2026 重点
 
