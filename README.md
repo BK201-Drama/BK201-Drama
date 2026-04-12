@@ -4,7 +4,7 @@
 
 # BK201-Drama
 
-<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="160" alt="BK201-Drama" />
+<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="140" height="140" alt="BK201-Drama" />
 
 **Full-stack** · React · NestJS · Django · [Blog](https://bk201-drama.github.io/) · [Repositories](https://github.com/BK201-Drama?tab=repositories)
 
