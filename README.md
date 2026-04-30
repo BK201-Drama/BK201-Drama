@@ -2,7 +2,7 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-# BK201-Drama
+# Kaidi Lin(BK201-Drama)
 
 <img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="140" height="140" alt="BK201-Drama" />
 
