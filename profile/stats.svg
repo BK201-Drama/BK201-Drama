@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Kaidi Lin's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 309, Total PRs: 5, Total Issues: 1, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 12, Total Commits  (last year) : 312, Total PRs: 5, Total Issues: 1, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 197.60391416709845;
+        stroke-dashoffset: 197.45660922635352;
       }
     }
   
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >309</text>
+      >312</text>
     </g>
   </g><g transform="translate(0, 56)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
