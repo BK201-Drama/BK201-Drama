@@ -2,6 +2,9 @@
 /**
  * Regenerates profile/github-overview.svg from GitHub GraphQL stats.
  * Requires: GH_TOKEN or GITHUB_TOKEN
+ *
+ * Tip: Actions' GITHUB_TOKEN only sees public activity. For numbers that
+ * match your profile (incl. private), set repo secret GH_PAT and pass it in.
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -9,13 +12,16 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
-const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+const token = process.env.GH_PAT || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const login = process.env.GITHUB_ACTOR || "BK201-Drama";
 
 if (!token) {
-  console.error("Missing GH_TOKEN / GITHUB_TOKEN");
+  console.error("Missing GH_PAT / GH_TOKEN / GITHUB_TOKEN");
   process.exit(1);
 }
+
+const FONT =
+  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
 
 const query = `
 query($login: String!) {
@@ -70,58 +76,63 @@ const langs = [...counts.entries()]
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 5);
 
-const shades = ["#1a1a1a", "#4a4a4a", "#6e6e6e", "#929292", "#b6b6b6"];
-const barX = 20;
-const barW = 680;
+const shades = ["#24292f", "#57606a", "#8c959f", "#afb8c1", "#d0d7de"];
+const barX = 16;
+const barW = 688;
 let x = barX;
 const segments = langs.map((lang, i) => {
-  const w = Math.max(2, Math.round((lang.pct / 100) * barW));
-  const seg = { ...lang, x, w, fill: shades[i] || "#b6b6b6", label: `${Math.round(lang.pct)}%` };
+  const w = Math.max(3, Math.round((lang.pct / 100) * barW));
+  const seg = {
+    ...lang,
+    x,
+    w,
+    fill: shades[i] || "#d0d7de",
+    label: `${Math.round(lang.pct)}%`,
+  };
   x += w;
   return seg;
 });
 
+// equal-ish legend columns
+const legendW = 688 / Math.max(segments.length, 1);
 const legend = segments
   .map((s, i) => {
-    const col = i < 3 ? i : i - 3;
-    const row = i < 3 ? 0 : 1;
-    const lx = 20 + col * 150;
-    const ly = 138 + row * 0; // single row preferred
-    // keep single row for <=5 by tighter spacing
-    const sx = 20 + i * 136;
-    const sy = 138;
+    const sx = 16 + i * legendW;
     return `
-  <circle cx="${sx + 4}" cy="${sy}" r="3.5" fill="${s.fill}"/>
-  <text x="${sx + 14}" y="${sy + 4}" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">${s.name} ${s.label}</text>`;
+  <circle cx="${sx + 5}" cy="118" r="3.5" fill="${s.fill}"/>
+  <text x="${sx + 14}" y="122" font-family="${FONT}" font-size="12" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`;
   })
   .join("");
 
 const bars = segments
-  .map((s) => `<rect x="${s.x}" y="106" width="${s.w}" height="10" fill="${s.fill}"/>`)
+  .map((s) => `<rect x="${s.x}" y="96" width="${s.w}" height="8" fill="${s.fill}"/>`)
   .join("\n  ");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="168" viewBox="0 0 720 168" role="img" aria-label="GitHub overview">
+const metrics = [
+  { value: contrib, label: "Contributions", x: 16 },
+  { value: commits, label: "Commits", x: 248 },
+  { value: prs, label: "Pull requests", x: 480 },
+];
+
+const metricTexts = metrics
+  .map(
+    (m) => `
+  <text x="${m.x}" y="36" font-family="${FONT}" font-size="26" font-weight="600" fill="#24292f">${m.value}</text>
+  <text x="${m.x}" y="54" font-family="${FONT}" font-size="12" fill="#656d76">${m.label}</text>`
+  )
+  .join("");
+
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="140" viewBox="0 0 720 140" role="img" aria-label="GitHub overview">
   <title>GitHub overview</title>
-  <rect width="720" height="168" fill="#f6f6f4"/>
-  <rect x="0.5" y="0.5" width="719" height="167" fill="none" stroke="#d4d4d0"/>
+  <rect width="720" height="140" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="719" height="139" rx="6" fill="none" stroke="#d0d7de"/>
 
-  <rect x="1" y="1" width="718" height="72" fill="#f0f0ec"/>
-  <line x1="1" y1="73" x2="719" y2="73" stroke="#d4d4d0"/>
-  <line x1="240" y1="1" x2="240" y2="73" stroke="#d4d4d0"/>
-  <line x1="480" y1="1" x2="480" y2="73" stroke="#d4d4d0"/>
+  ${metricTexts}
 
-  <text x="20" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">${contrib}</text>
-  <text x="20" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">CONTRIBUTIONS</text>
+  <line x1="16" y1="70" x2="704" y2="70" stroke="#d0d7de"/>
 
-  <text x="260" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">${commits}</text>
-  <text x="260" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">COMMITS</text>
-
-  <text x="500" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">${prs}</text>
-  <text x="500" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">PULL REQUESTS</text>
-
-  <text x="20" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">TOP LANGUAGES</text>
-
-  <rect x="20" y="106" width="680" height="10" fill="#e4e4de"/>
+  <text x="16" y="88" font-family="${FONT}" font-size="12" font-weight="600" fill="#24292f">Top languages</text>
+  <rect x="16" y="96" width="688" height="8" rx="2" fill="#f6f8fa"/>
   ${bars}
   ${legend}
 </svg>
@@ -131,3 +142,11 @@ const out = join(root, "profile", "github-overview.svg");
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, svg);
 console.log("Wrote", out, { contrib, commits, prs, langs });
+
+function escapeXml(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}

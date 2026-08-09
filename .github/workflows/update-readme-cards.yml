@@ -21,6 +21,8 @@ jobs:
 
       - name: Generate overview SVG
         env:
+          # Prefer GH_PAT (repo secret) so private contributions match profile UI.
+          GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.repository_owner }}
         run: node scripts/generate-overview.mjs
