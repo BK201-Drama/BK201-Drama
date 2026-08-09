@@ -2,23 +2,15 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-<table>
-  <tr>
-    <td valign="middle" width="9999">
-      <h1>Kaidi Lin</h1>
-      <p>Full-stack · WeRide · Guangzhou</p>
-      <p>
-        <a href="https://bk201-drama.github.io/">Blog</a> ·
-        <a href="https://github.com/BK201-Drama?tab=repositories">GitHub</a> ·
-        <code>BK201-Drama</code>
-      </p>
-      <p><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" /></p>
-    </td>
-    <td valign="middle" width="156">
-      <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="156" height="156" alt="Kaidi Lin" />
-    </td>
-  </tr>
-</table>
+<img align="right" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="150" height="150" alt="Kaidi Lin" />
+
+# Kaidi Lin
+
+Full-stack · WeRide · Guangzhou
+
+[Blog](https://bk201-drama.github.io/) · [GitHub](https://github.com/BK201-Drama?tab=repositories) · `BK201-Drama`
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 
 ## Experience
 
@@ -43,7 +35,7 @@
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=7" alt="GitHub overview" width="1000" />
+<img src="./profile/github-overview.svg?v=8" alt="GitHub overview" width="1000" />
 
 ## Stack
 
