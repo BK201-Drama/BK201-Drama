@@ -2,9 +2,12 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-<table width="100%">
+<!-- spacer: GitHub ignores table width=100%; a wide img forces the content column open -->
+<img src="https://raw.githubusercontent.com/BK201-Drama/BK201-Drama/master/profile/spacer.svg" width="1000" height="1" alt="" />
+
+<table>
   <tr>
-    <td valign="top">
+    <td valign="top" width="58%">
       <h1>Kaidi Lin</h1>
       <p>Full-stack · WeRide · Guangzhou</p>
       <p>
@@ -14,7 +17,13 @@
       </p>
       <p><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" /></p>
     </td>
-    <td valign="top" align="right" width="112">
+    <td valign="top" width="27%">
+      <p><b>Now</b><br/>learning-agent</p>
+      <p><b>Also</b><br/>agent-farm-cli · stock-dashboard</p>
+      <p><b>Org</b><br/>EWorf</p>
+      <p><b>Since</b><br/>2020</p>
+    </td>
+    <td valign="top" align="right" width="15%">
       <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="108" height="108" alt="Kaidi Lin" />
     </td>
   </tr>
@@ -22,20 +31,14 @@
 
 ## Experience
 
-<table width="100%">
-  <tr>
-    <td><b>Software Engineer · weval</b> · WeRide</td>
-    <td align="right"><code>2022.06 — Present</code></td>
-  </tr>
-  <tr>
-    <td><b>B.Eng. Software Engineering</b> · SCUT</td>
-    <td align="right"><code>2019.09 — 2023.06</code></td>
-  </tr>
-</table>
+| | |
+| :--- | ---: |
+| **Software Engineer · weval** · WeRide | `2022.06 — Present` |
+| **B.Eng. Software Engineering** · SCUT | `2019.09 — 2023.06` |
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=4" alt="GitHub overview" width="720" />
+<img src="./profile/github-overview.svg?v=5" alt="GitHub overview" width="1000" />
 
 ## Stack
 
