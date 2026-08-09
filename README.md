@@ -1,7 +1,5 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
-
-Badges are local SVGs under profile/badges/ so they are not clickable camo links.
 -->
 
 <table>
@@ -15,11 +13,11 @@ Badges are local SVGs under profile/badges/ so they are not clickable camo links
         Guangzhou · GitHub since 2020
       </p>
       <p>
-        <img src="./profile/badges/vibe-coder.svg" alt="Vibe Coder" />
-        <img src="./profile/badges/weride.svg" alt="WeRide" />
-        <img src="./profile/badges/weval.svg" alt="weval" />
-        <img src="./profile/badges/org-eworf.svg" alt="Org EWorf" />
-        <img src="./profile/badges/focusing.svg" alt="Focusing" />
+        <img src="https://img.shields.io/badge/Vibe_Coder-E8E8E8?style=flat-square" alt="Vibe Coder" />
+        <img src="https://img.shields.io/badge/WeRide-E8E8E8?style=flat-square" alt="WeRide" />
+        <img src="https://img.shields.io/badge/weval-E8E8E8?style=flat-square" alt="weval" />
+        <img src="https://img.shields.io/badge/Org_EWorf-E8E8E8?style=flat-square" alt="Org EWorf" />
+        <img src="https://img.shields.io/badge/Focusing-E8E8E8?style=flat-square" alt="Focusing" />
       </p>
     </td>
     <td valign="middle" width="190" align="right">
@@ -48,47 +46,47 @@ Badges are local SVGs under profile/badges/ so they are not clickable camo links
       <p>
         <b>dataFountain_0.8961</b> · <code>Python</code><br />
         个贷违约预测 · A榜 #72 · B榜 #61<br />
-        <img src="./profile/badges/competition.svg" alt="Competition" />
-        <img src="./profile/badges/ml.svg" alt="ML" />
+        <img src="https://img.shields.io/badge/Competition-E8E8E8?style=flat-square" alt="Competition" />
+        <img src="https://img.shields.io/badge/ML-E8E8E8?style=flat-square" alt="ML" />
       </p>
       <p>
         <b>learning-agent</b> · <code>TypeScript</code><br />
         本地学习助手 · 当前主线<br />
-        <img src="./profile/badges/active.svg" alt="Active" />
-        <img src="./profile/badges/agent.svg" alt="Agent" />
+        <img src="https://img.shields.io/badge/Active-E8E8E8?style=flat-square" alt="Active" />
+        <img src="https://img.shields.io/badge/Agent-E8E8E8?style=flat-square" alt="Agent" />
       </p>
       <p>
         <b>agent-farm-cli</b> · <code>TypeScript</code><br />
         本地 agent 队列 / 执行基础设施<br />
-        <img src="./profile/badges/pinned.svg" alt="Pinned" />
-        <img src="./profile/badges/cli.svg" alt="CLI" />
+        <img src="https://img.shields.io/badge/Pinned-E8E8E8?style=flat-square" alt="Pinned" />
+        <img src="https://img.shields.io/badge/CLI-E8E8E8?style=flat-square" alt="CLI" />
       </p>
       <p>
         <b>stock-dashboard</b> · <code>Python</code><br />
         内部量化看板<br />
-        <img src="./profile/badges/side-system.svg" alt="Side system" />
+        <img src="https://img.shields.io/badge/Side_system-E8E8E8?style=flat-square" alt="Side system" />
       </p>
     </td>
     <td valign="top" width="540">
       <p><b>LANGUAGES</b></p>
       <img src="./profile/languages.svg?v=3" alt="Languages" width="520" />
       <p><b>FRONTEND</b><br />
-        <img src="./profile/badges/html5.svg" alt="HTML5" />
-        <img src="./profile/badges/css3.svg" alt="CSS3" />
-        <img src="./profile/badges/javascript.svg" alt="JavaScript" />
-        <img src="./profile/badges/typescript.svg" alt="TypeScript" />
-        <img src="./profile/badges/react.svg" alt="React" />
-        <img src="./profile/badges/vue.svg" alt="Vue" />
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
       </p>
       <p><b>BACKEND & DATA</b><br />
-        <img src="./profile/badges/nodejs.svg" alt="Node.js" />
-        <img src="./profile/badges/nestjs.svg" alt="NestJS" />
-        <img src="./profile/badges/python.svg" alt="Python" />
-        <img src="./profile/badges/django.svg" alt="Django" />
-        <img src="./profile/badges/postgresql.svg" alt="PostgreSQL" />
-        <img src="./profile/badges/mongodb.svg" alt="MongoDB" />
-        <img src="./profile/badges/mysql.svg" alt="MySQL" />
-        <img src="./profile/badges/redis.svg" alt="Redis" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+        <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
       </p>
     </td>
   </tr>
