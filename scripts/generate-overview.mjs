@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 /**
  * Regenerates profile/github-overview.svg from GitHub GraphQL stats.
- * Requires: GH_TOKEN or GITHUB_TOKEN
- *
- * Tip: Actions' GITHUB_TOKEN only sees public activity. For numbers that
- * match your profile (incl. private), set repo secret GH_PAT and pass it in.
+ * Prefer GH_PAT (private-aware). Falls back to GITHUB_TOKEN / GH_TOKEN.
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -15,13 +12,13 @@ const root = join(__dirname, "..");
 const token = process.env.GH_PAT || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const login = process.env.GITHUB_ACTOR || "BK201-Drama";
 
+// Arial is the most consistent face inside GitHub-hosted SVGs.
+const FONT = "Arial, Helvetica, sans-serif";
+
 if (!token) {
   console.error("Missing GH_PAT / GH_TOKEN / GITHUB_TOKEN");
   process.exit(1);
 }
-
-const FONT =
-  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
 
 const query = `
 query($login: String!) {
@@ -83,7 +80,8 @@ let x = barX;
 const segments = langs.map((lang, i) => {
   const w = Math.max(3, Math.round((lang.pct / 100) * barW));
   const seg = {
-    ...lang,
+    name: lang.name,
+    pct: lang.pct,
     x,
     w,
     fill: shades[i] || "#d0d7de",
@@ -93,46 +91,45 @@ const segments = langs.map((lang, i) => {
   return seg;
 });
 
-// equal-ish legend columns
-const legendW = 688 / Math.max(segments.length, 1);
+const legendW = Math.floor(688 / Math.max(segments.length, 1));
 const legend = segments
   .map((s, i) => {
     const sx = 16 + i * legendW;
-    return `
-  <circle cx="${sx + 5}" cy="118" r="3.5" fill="${s.fill}"/>
-  <text x="${sx + 14}" y="122" font-family="${FONT}" font-size="12" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`;
+    return [
+      `<circle cx="${sx + 5}" cy="112" r="3.5" fill="${s.fill}"/>`,
+      `<text x="${sx + 14}" y="116" font-family="${FONT}" font-size="12" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`,
+    ].join("\n  ");
   })
-  .join("");
-
-const bars = segments
-  .map((s) => `<rect x="${s.x}" y="96" width="${s.w}" height="8" fill="${s.fill}"/>`)
   .join("\n  ");
 
-const metrics = [
+const bars = segments
+  .map((s) => `<rect x="${s.x}" y="92" width="${s.w}" height="8" fill="${s.fill}"/>`)
+  .join("\n  ");
+
+const cols = [
   { value: contrib, label: "Contributions", x: 16 },
   { value: commits, label: "Commits", x: 248 },
   { value: prs, label: "Pull requests", x: 480 },
 ];
 
-const metricTexts = metrics
+const metricTexts = cols
   .map(
-    (m) => `
-  <text x="${m.x}" y="36" font-family="${FONT}" font-size="26" font-weight="600" fill="#24292f">${m.value}</text>
-  <text x="${m.x}" y="54" font-family="${FONT}" font-size="12" fill="#656d76">${m.label}</text>`
+    (m) =>
+      [
+        `<text x="${m.x}" y="34" font-family="${FONT}" font-size="24" font-weight="700" fill="#24292f">${m.value}</text>`,
+        `<text x="${m.x}" y="52" font-family="${FONT}" font-size="12" fill="#656d76">${m.label}</text>`,
+      ].join("\n  ")
   )
-  .join("");
+  .join("\n  ");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="140" viewBox="0 0 720 140" role="img" aria-label="GitHub overview">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="132" viewBox="0 0 720 132" role="img" aria-label="GitHub overview">
   <title>GitHub overview</title>
-  <rect width="720" height="140" rx="6" fill="#ffffff"/>
-  <rect x="0.5" y="0.5" width="719" height="139" rx="6" fill="none" stroke="#d0d7de"/>
-
+  <rect width="720" height="132" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="719" height="131" rx="6" fill="none" stroke="#d0d7de"/>
   ${metricTexts}
-
-  <line x1="16" y1="70" x2="704" y2="70" stroke="#d0d7de"/>
-
-  <text x="16" y="88" font-family="${FONT}" font-size="12" font-weight="600" fill="#24292f">Top languages</text>
-  <rect x="16" y="96" width="688" height="8" rx="2" fill="#f6f8fa"/>
+  <line x1="16" y1="66" x2="704" y2="66" stroke="#d0d7de"/>
+  <text x="16" y="84" font-family="${FONT}" font-size="12" font-weight="700" fill="#24292f">Top languages</text>
+  <rect x="16" y="92" width="688" height="8" rx="2" fill="#f6f8fa"/>
   ${bars}
   ${legend}
 </svg>

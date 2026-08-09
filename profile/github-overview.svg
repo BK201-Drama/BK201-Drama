@@ -1,34 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="140" viewBox="0 0 720 140" role="img" aria-label="GitHub overview">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="132" viewBox="0 0 720 132" role="img" aria-label="GitHub overview">
   <title>GitHub overview</title>
-  <rect width="720" height="140" rx="6" fill="#ffffff"/>
-  <rect x="0.5" y="0.5" width="719" height="139" rx="6" fill="none" stroke="#d0d7de"/>
-
-  
-  <text x="16" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#24292f">409</text>
-  <text x="16" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Contributions</text>
-  <text x="248" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#24292f">390</text>
-  <text x="248" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Commits</text>
-  <text x="480" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#24292f">8</text>
-  <text x="480" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Pull requests</text>
-
-  <line x1="16" y1="70" x2="704" y2="70" stroke="#d0d7de"/>
-
-  <text x="16" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#24292f">Top languages</text>
-  <rect x="16" y="96" width="688" height="8" rx="2" fill="#f6f8fa"/>
-  <rect x="16" y="96" width="262" height="8" fill="#24292f"/>
-  <rect x="278" y="96" width="229" height="8" fill="#57606a"/>
-  <rect x="507" y="96" width="131" height="8" fill="#8c959f"/>
-  <rect x="638" y="96" width="33" height="8" fill="#afb8c1"/>
-  <rect x="671" y="96" width="33" height="8" fill="#d0d7de"/>
-  
-  <circle cx="21" cy="118" r="3.5" fill="#24292f"/>
-  <text x="30" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#57606a">TypeScript 38%</text>
-  <circle cx="158.6" cy="118" r="3.5" fill="#57606a"/>
-  <text x="167.6" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#57606a">JavaScript 33%</text>
-  <circle cx="296.2" cy="118" r="3.5" fill="#8c959f"/>
-  <text x="305.2" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#57606a">Python 19%</text>
-  <circle cx="433.79999999999995" cy="118" r="3.5" fill="#afb8c1"/>
-  <text x="442.79999999999995" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#57606a">HTML 5%</text>
-  <circle cx="571.4" cy="118" r="3.5" fill="#d0d7de"/>
-  <text x="580.4" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#57606a">Vue 5%</text>
+  <rect width="720" height="132" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="719" height="131" rx="6" fill="none" stroke="#d0d7de"/>
+  <text x="16" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">1024</text>
+  <text x="16" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Contributions</text>
+  <text x="248" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">975</text>
+  <text x="248" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Commits</text>
+  <text x="480" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">30</text>
+  <text x="480" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Pull requests</text>
+  <line x1="16" y1="66" x2="704" y2="66" stroke="#d0d7de"/>
+  <text x="16" y="84" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24292f">Top languages</text>
+  <rect x="16" y="92" width="688" height="8" rx="2" fill="#f6f8fa"/>
+  <rect x="16" y="92" width="289" height="8" fill="#24292f"/>
+  <rect x="305" y="92" width="200" height="8" fill="#57606a"/>
+  <rect x="505" y="92" width="155" height="8" fill="#8c959f"/>
+  <rect x="660" y="92" width="22" height="8" fill="#afb8c1"/>
+  <rect x="682" y="92" width="22" height="8" fill="#d0d7de"/>
+  <circle cx="21" cy="112" r="3.5" fill="#24292f"/>
+  <text x="30" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">TypeScript 42%</text>
+  <circle cx="158" cy="112" r="3.5" fill="#57606a"/>
+  <text x="167" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">JavaScript 29%</text>
+  <circle cx="295" cy="112" r="3.5" fill="#8c959f"/>
+  <text x="304" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">Python 23%</text>
+  <circle cx="432" cy="112" r="3.5" fill="#afb8c1"/>
+  <text x="441" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">HTML 3%</text>
+  <circle cx="569" cy="112" r="3.5" fill="#d0d7de"/>
+  <text x="578" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">Vue 3%</text>
 </svg>
