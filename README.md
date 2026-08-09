@@ -2,12 +2,11 @@
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 -->
 
-<!-- spacer: GitHub ignores table width=100%; a wide img forces the content column open -->
 <img src="https://raw.githubusercontent.com/BK201-Drama/BK201-Drama/master/profile/spacer.svg" width="1000" height="1" alt="" />
 
 <table>
   <tr>
-    <td valign="top" width="58%">
+    <td valign="top">
       <h1>Kaidi Lin</h1>
       <p>Full-stack · WeRide · Guangzhou</p>
       <p>
@@ -17,13 +16,7 @@
       </p>
       <p><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" /></p>
     </td>
-    <td valign="top" width="27%">
-      <p><b>Now</b><br/>learning-agent</p>
-      <p><b>Also</b><br/>agent-farm-cli · stock-dashboard</p>
-      <p><b>Org</b><br/>EWorf</p>
-      <p><b>Since</b><br/>2020</p>
-    </td>
-    <td valign="top" align="right" width="15%">
+    <td valign="top" align="right" width="120">
       <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="108" height="108" alt="Kaidi Lin" />
     </td>
   </tr>
@@ -38,8 +31,8 @@
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=5" alt="GitHub overview" width="1000" />
+<img src="./profile/github-overview.svg?v=6" alt="GitHub overview" width="1000" />
 
 ## Stack
 
-![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Now](https://img.shields.io/badge/Now-learning--agent-24292f?style=flat-square)
+![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
