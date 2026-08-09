@@ -1,24 +1,18 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
+
+Note: GitHub strips custom CSS (no flex/grid/style). Layout must use limited HTML/Markdown only.
 -->
 
-<table>
-  <tr>
-    <td valign="top">
-      <h1>Kaidi Lin</h1>
-      <p>Full-stack · WeRide · Guangzhou</p>
-      <p>
-        <a href="https://bk201-drama.github.io/">Blog</a> ·
-        <a href="https://github.com/BK201-Drama?tab=repositories">GitHub</a> ·
-        <code>BK201-Drama</code>
-      </p>
-    </td>
-    <td width="9999"></td>
-    <td valign="top">
-      <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="120" height="120" alt="Kaidi Lin" />
-    </td>
-  </tr>
-</table>
+<img align="right" width="110" height="110" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" alt="Kaidi Lin" />
+
+# Kaidi Lin
+
+Full-stack · WeRide · Guangzhou
+
+[Blog](https://bk201-drama.github.io/) · [GitHub](https://github.com/BK201-Drama?tab=repositories) · `BK201-Drama`
+
+<br clear="right" />
 
 ## Experience
 
@@ -43,7 +37,7 @@
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=10" alt="GitHub overview" width="1000" />
+<img src="./profile/github-overview.svg?v=11" alt="GitHub overview" width="1000" />
 
 ## Stack
 
