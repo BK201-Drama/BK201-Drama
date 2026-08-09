@@ -28,24 +28,26 @@
 
 ## Experience & Education
 
-**Software Engineer · weval** · WeRide  
-`2022.06 — Present`
-
-**B.Eng. Software Engineering** · South China University of Technology  
-`2019.09 — 2023.06`
+<table>
+  <tr>
+    <td valign="middle"><b>Software Engineer · weval</b> · WeRide</td>
+    <td valign="middle" align="right"><code>2022.06 — Present</code></td>
+  </tr>
+  <tr>
+    <td valign="middle"><b>B.Eng. Software Engineering</b> · South China University of Technology</td>
+    <td valign="middle" align="right"><code>2019.09 — 2023.06</code></td>
+  </tr>
+</table>
 
 ## Metrics & Skills
 
+<img src="./profile/metrics.svg?v=4" alt="Selected metrics" width="920" />
+
 <table>
-  <tr>
-    <td colspan="2">
-      <img src="./profile/metrics.svg?v=3" alt="Selected metrics" width="920" />
-    </td>
-  </tr>
   <tr>
     <td valign="top" width="460">
       <p><b>LANGUAGES</b></p>
-      <img src="./profile/languages.svg?v=3" alt="Languages" width="440" />
+      <img src="./profile/languages.svg?v=4" alt="Languages" width="440" />
     </td>
     <td valign="top" width="460">
       <p><b>FRONTEND</b><br />

@@ -100,21 +100,24 @@ function writeMetrics() {
     { value: prs, label: "PULL REQUESTS" },
     { value: reposTouched, label: "REPOS TOUCHED" },
   ];
-  const colW = Math.floor((WIDTH - 2) / items.length);
+  const colW = Math.floor(WIDTH / items.length);
   const cells = items
     .map((item, i) => {
-      const x = 1 + i * colW;
-      return `
-  <line x1="${x}" y1="1" x2="${x}" y2="71" stroke="#d4d4d0"/>
+      const x = i * colW;
+      const divider =
+        i === 0
+          ? ""
+          : `
+  <line x1="${x}" y1="8" x2="${x}" y2="64" stroke="#e4e4de"/>`;
+      return `${divider}
   <text x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="#141414">${item.value}</text>
   <text x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em" fill="#666666">${item.label}</text>`;
     })
     .join("");
 
+  // No outer fill/stroke — avoid box-in-box next to GitHub table borders.
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="72" viewBox="0 0 ${WIDTH} 72" role="img" aria-label="Selected metrics">
   <title>Selected metrics</title>
-  <rect width="${WIDTH}" height="72" fill="#fafaf7"/>
-  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="71" fill="none" stroke="#d4d4d0"/>
   ${cells}
 </svg>
 `;
