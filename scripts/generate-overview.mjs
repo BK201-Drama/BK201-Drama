@@ -89,8 +89,8 @@ const langs = [...counts.entries()]
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 5);
 
-// Profile main column is ~880–900px; keep card slightly under that.
-const WIDTH = 880;
+// Profile main column is ~900–940px; keep card slightly under that.
+const WIDTH = 920;
 const PAD = 16;
 const barX = PAD;
 const barW = WIDTH - PAD * 2;

@@ -1,12 +1,12 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 
-Widths tuned for GitHub profile main column (~880px), not 9999.
+Widths tuned for GitHub profile main column (~920px), not 9999.
 -->
 
 <table>
   <tr>
-    <td valign="middle" width="760">
+    <td valign="middle" width="800">
       <h1>Kaidi Lin</h1>
       <p>
         Full-stack · WeRide · Guangzhou<br />
@@ -28,7 +28,7 @@ Widths tuned for GitHub profile main column (~880px), not 9999.
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=15" alt="GitHub overview" width="880" />
+<img src="./profile/github-overview.svg?v=16" alt="GitHub overview" width="920" />
 
 ## Stack
 
