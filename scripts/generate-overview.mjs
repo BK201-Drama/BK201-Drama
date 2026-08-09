@@ -149,10 +149,12 @@ function writeLanguages() {
   ${rows}
 </svg>
 `;
-  // narrower card for sidebar use
-  const sideW = 360;
-  const sideTrackX = 90;
-  const sideTrackW = sideW - sideTrackX - 40;
+  // Skills-column language bars (wider)
+  const sideW = 520;
+  const sideLabelW = 96;
+  const sidePctW = 40;
+  const sideTrackX = sideLabelW + 8;
+  const sideTrackW = sideW - sideTrackX - sidePctW;
   const sideRows = langs
     .map((lang, i) => {
       const y = top + i * rowH;
@@ -161,8 +163,8 @@ function writeLanguages() {
       const pct = `${Math.round(lang.pct)}%`;
       return `
   <text x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#333333">${escapeXml(lang.name)}</text>
-  <rect x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="6" fill="#e4e4de"/>
-  <rect x="${sideTrackX}" y="${y + 5}" width="${w}" height="6" fill="${fill}"/>
+  <rect x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="7" fill="#e4e4de"/>
+  <rect x="${sideTrackX}" y="${y + 5}" width="${w}" height="7" fill="${fill}"/>
   <text x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#666666" text-anchor="end">${pct}</text>`;
     })
     .join("");
@@ -174,7 +176,7 @@ function writeLanguages() {
 </svg>
 `;
   writeFileSync(join(root, "profile", "languages.svg"), sideSvg);
-  writeFileSync(join(root, "profile", "github-overview.svg"), svg); // keep full-width variant
+  writeFileSync(join(root, "profile", "github-overview.svg"), svg);
 }
 
 mkdirSync(join(root, "profile"), { recursive: true });
