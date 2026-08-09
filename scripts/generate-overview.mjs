@@ -110,42 +110,42 @@ const segments = langs.map((lang, i) => {
 const legendW = Math.floor(688 / Math.max(segments.length, 1));
 const legend = segments
   .map((s, i) => {
-    const sx = 16 + i * legendW;
+    const sx = 14 + i * legendW;
     return [
-      `<circle cx="${sx + 5}" cy="112" r="3.5" fill="${s.fill}"/>`,
-      `<text x="${sx + 14}" y="116" font-family="${FONT}" font-size="12" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`,
+      `<circle cx="${sx + 4}" cy="98" r="3" fill="${s.fill}"/>`,
+      `<text x="${sx + 12}" y="101" font-family="${FONT}" font-size="11" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`,
     ].join("\n  ");
   })
   .join("\n  ");
 
 const bars = segments
-  .map((s) => `<rect x="${s.x}" y="92" width="${s.w}" height="8" fill="${s.fill}"/>`)
+  .map((s) => `<rect x="${s.x}" y="80" width="${s.w}" height="7" fill="${s.fill}"/>`)
   .join("\n  ");
 
 const cols = [
-  { value: contrib, label: "Contributions", x: 16 },
-  { value: commits, label: "Commits", x: 248 },
-  { value: prs, label: "Pull requests", x: 480 },
+  { value: contrib, label: "Contributions", x: 14 },
+  { value: commits, label: "Commits", x: 246 },
+  { value: prs, label: "Pull requests", x: 478 },
 ];
 
 const metricTexts = cols
   .map(
     (m) =>
       [
-        `<text x="${m.x}" y="34" font-family="${FONT}" font-size="24" font-weight="700" fill="#24292f">${m.value}</text>`,
-        `<text x="${m.x}" y="52" font-family="${FONT}" font-size="12" fill="#656d76">${m.label}</text>`,
+        `<text x="${m.x}" y="28" font-family="${FONT}" font-size="22" font-weight="700" fill="#24292f">${m.value}</text>`,
+        `<text x="${m.x}" y="44" font-family="${FONT}" font-size="11" fill="#656d76">${m.label}</text>`,
       ].join("\n  ")
   )
   .join("\n  ");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="132" viewBox="0 0 720 132" role="img" aria-label="GitHub overview">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="114" viewBox="0 0 720 114" role="img" aria-label="GitHub overview">
   <title>GitHub overview</title>
-  <rect width="720" height="132" rx="6" fill="#ffffff"/>
-  <rect x="0.5" y="0.5" width="719" height="131" rx="6" fill="none" stroke="#d0d7de"/>
+  <rect width="720" height="114" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="719" height="113" rx="6" fill="none" stroke="#d0d7de"/>
   ${metricTexts}
-  <line x1="16" y1="66" x2="704" y2="66" stroke="#d0d7de"/>
-  <text x="16" y="84" font-family="${FONT}" font-size="12" font-weight="700" fill="#24292f">Top languages</text>
-  <rect x="16" y="92" width="688" height="8" rx="2" fill="#f6f8fa"/>
+  <line x1="14" y1="56" x2="706" y2="56" stroke="#d0d7de"/>
+  <text x="14" y="72" font-family="${FONT}" font-size="11" font-weight="700" fill="#24292f">Top languages</text>
+  <rect x="14" y="80" width="692" height="7" rx="2" fill="#f6f8fa"/>
   ${bars}
   ${legend}
 </svg>

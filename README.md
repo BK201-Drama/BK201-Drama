@@ -1,44 +1,32 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
-
-GitHub draws border-bottom on h1/h2. A floated avatar next to "# Name" gets cut by that line.
-Use h3 for the name, and clear the float before the next h2 section.
 -->
 
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" alt="Kaidi Lin" />
-
-### Kaidi Lin
-
-Full-stack · WeRide · Guangzhou
-
-[Blog](https://bk201-drama.github.io/) · [GitHub](https://github.com/BK201-Drama?tab=repositories) · `BK201-Drama`
-
-<br clear="right" />
+<table>
+  <tr>
+    <td valign="middle">
+      <h1>Kaidi Lin</h1>
+      <p>
+        Full-stack · WeRide · Guangzhou<br />
+        <a href="https://bk201-drama.github.io/">Blog</a> ·
+        <a href="https://github.com/BK201-Drama?tab=repositories">GitHub</a> ·
+        <code>BK201-Drama</code>
+      </p>
+    </td>
+    <td valign="middle">
+      <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="96" height="96" alt="Kaidi Lin" />
+    </td>
+  </tr>
+</table>
 
 ## Experience
 
-<table>
-  <thead>
-    <tr>
-      <th align="left" width="9999">Role</th>
-      <th align="right">Period</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Software Engineer · weval</b> · WeRide</td>
-      <td align="right"><code>2022.06 — Present</code></td>
-    </tr>
-    <tr>
-      <td><b>B.Eng. Software Engineering</b> · SCUT</td>
-      <td align="right"><code>2019.09 — 2023.06</code></td>
-    </tr>
-  </tbody>
-</table>
+- **Software Engineer · weval** · WeRide · `2022.06 — Present`
+- **B.Eng. Software Engineering** · SCUT · `2019.09 — 2023.06`
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=12" alt="GitHub overview" width="1000" />
+<img src="./profile/github-overview.svg?v=13" alt="GitHub overview" width="720" />
 
 ## Stack
 
