@@ -1,12 +1,13 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
 
-Note: GitHub strips custom CSS (no flex/grid/style). Layout must use limited HTML/Markdown only.
+GitHub draws border-bottom on h1/h2. A floated avatar next to "# Name" gets cut by that line.
+Use h3 for the name, and clear the float before the next h2 section.
 -->
 
-<img align="right" width="110" height="110" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" alt="Kaidi Lin" />
+<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" alt="Kaidi Lin" />
 
-# Kaidi Lin
+### Kaidi Lin
 
 Full-stack · WeRide · Guangzhou
 
@@ -37,7 +38,7 @@ Full-stack · WeRide · Guangzhou
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=11" alt="GitHub overview" width="1000" />
+<img src="./profile/github-overview.svg?v=12" alt="GitHub overview" width="1000" />
 
 ## Stack
 
