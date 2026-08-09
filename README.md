@@ -31,7 +31,7 @@
 
 ## Experience
 
-| | |
+| Role | Period |
 | :--- | ---: |
 | **Software Engineer · weval** · WeRide | `2022.06 — Present` |
 | **B.Eng. Software Engineering** · SCUT | `2019.09 — 2023.06` |
