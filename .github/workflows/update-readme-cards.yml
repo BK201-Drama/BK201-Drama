@@ -24,18 +24,18 @@ jobs:
           fi
           echo "HAS_PAT=1" >> "$GITHUB_ENV"
 
-      - name: Generate overview SVG
+      - name: Generate overview SVGs
         if: env.HAS_PAT == '1'
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_ACTOR: ${{ github.repository_owner }}
         run: node scripts/generate-overview.mjs
 
-      - name: Commit card
+      - name: Commit cards
         if: env.HAS_PAT == '1'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/github-overview.svg
-          git commit -m "chore(profile): update github overview card" || exit 0
+          git add profile/metrics.svg profile/languages.svg profile/github-overview.svg
+          git commit -m "chore(profile): update metrics and languages cards" || exit 0
           git push

@@ -1,35 +1,108 @@
 <!--
 **BK201-Drama/BK201-Drama** is a ✨ special ✨ repository because its README appears on your GitHub profile.
-
-Widths tuned for GitHub profile main column (~920px), not 9999.
 -->
 
 <table>
   <tr>
-    <td valign="middle" width="800">
+    <td valign="top" width="800">
       <h1>Kaidi Lin</h1>
+      <p><code>BK201-Drama</code> · Full-stack Engineer</p>
       <p>
-        Full-stack · WeRide · Guangzhou<br />
         <a href="https://bk201-drama.github.io/">Blog</a> ·
-        <a href="https://github.com/BK201-Drama?tab=repositories">GitHub</a> ·
-        <code>BK201-Drama</code>
+        <a href="https://github.com/BK201-Drama?tab=repositories">Repositories</a> ·
+        Guangzhou · GitHub since 2020
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Vibe_Coder-141414?style=flat-square" alt="Vibe Coder" />
+        <img src="https://img.shields.io/badge/WeRide-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="WeRide" />
+        <img src="https://img.shields.io/badge/weval-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="weval" />
+        <img src="https://img.shields.io/badge/Org-EWorf-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Org EWorf" />
+        <img src="https://img.shields.io/badge/Focusing-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Focusing" />
       </p>
     </td>
-    <td valign="middle" width="120" align="right">
-      <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="96" height="96" alt="Kaidi Lin" />
+    <td valign="top" width="120" align="right">
+      <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="108" height="108" alt="Kaidi Lin" />
     </td>
   </tr>
 </table>
 
-## Experience
+## Experience & Education
 
-- **Software Engineer · weval** · WeRide · `2022.06 — Present`
-- **B.Eng. Software Engineering** · SCUT · `2019.09 — 2023.06`
+<table>
+  <tr>
+    <td>
+      <b>Software Engineer · weval</b><br />
+      WeRide
+    </td>
+    <td align="right" valign="top"><code>2022.06 — Present</code></td>
+  </tr>
+  <tr>
+    <td>
+      <b>B.Eng. Software Engineering</b><br />
+      South China University of Technology
+    </td>
+    <td align="right" valign="top"><code>2019.09 — 2023.06</code></td>
+  </tr>
+</table>
 
-## GitHub
+## Selected Metrics
 
-<img src="./profile/github-overview.svg?v=16" alt="GitHub overview" width="920" />
+<img src="./profile/metrics.svg?v=1" alt="Selected metrics" width="920" />
 
-## Stack
+## Projects & Skills
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+<table>
+  <tr>
+    <td valign="top" width="540">
+      <p>
+        <b>dataFountain_0.8961</b> · <code>Python</code><br />
+        个贷违约预测 · A榜 #72 · B榜 #61<br />
+        <img src="https://img.shields.io/badge/Competition-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Competition" />
+        <img src="https://img.shields.io/badge/ML-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="ML" />
+      </p>
+      <p>
+        <b>learning-agent</b> · <code>TypeScript</code><br />
+        本地学习助手 · 当前主线<br />
+        <img src="https://img.shields.io/badge/Active-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Active" />
+        <img src="https://img.shields.io/badge/Agent-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Agent" />
+      </p>
+      <p>
+        <b>agent-farm-cli</b> · <code>TypeScript</code><br />
+        本地 agent 队列 / 执行基础设施<br />
+        <img src="https://img.shields.io/badge/Pinned-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Pinned" />
+        <img src="https://img.shields.io/badge/CLI-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="CLI" />
+      </p>
+      <p>
+        <b>stock-dashboard</b> · <code>Python</code><br />
+        内部量化看板<br />
+        <img src="https://img.shields.io/badge/Side_system-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Side system" />
+      </p>
+    </td>
+    <td valign="top" width="380">
+      <p><b>LANGUAGES</b></p>
+      <img src="./profile/languages.svg?v=1" alt="Languages" width="360" />
+      <p><b>FRONTEND</b><br />
+        <img src="https://img.shields.io/badge/HTML5-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="HTML5" />
+        <img src="https://img.shields.io/badge/CSS3-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="CSS3" />
+        <img src="https://img.shields.io/badge/JavaScript-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/TypeScript-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="React" />
+        <img src="https://img.shields.io/badge/Vue-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Vue" />
+      </p>
+      <p><b>BACKEND & DATA</b><br />
+        <img src="https://img.shields.io/badge/Node.js-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Node.js" />
+        <img src="https://img.shields.io/badge/NestJS-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="NestJS" />
+        <img src="https://img.shields.io/badge/Python-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Python" />
+        <img src="https://img.shields.io/badge/Django-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Django" />
+        <img src="https://img.shields.io/badge/PostgreSQL-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/MongoDB-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/MySQL-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="MySQL" />
+        <img src="https://img.shields.io/badge/Redis-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="Redis" />
+      </p>
+      <p><b>CURRENT FOCUS</b><br />
+        <img src="https://img.shields.io/badge/learning--agent-141414?style=flat-square" alt="learning-agent" />
+        <img src="https://img.shields.io/badge/agent--farm--cli-efefeb?style=flat-square&labelColor=efefeb&color=222222" alt="agent-farm-cli" />
+      </p>
+    </td>
+  </tr>
+</table>

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Regenerates profile/github-overview.svg from GitHub GraphQL stats.
+ * Regenerates profile SVGs from GitHub GraphQL stats.
  * Prefer GH_PAT (private-aware). Falls back to GITHUB_TOKEN / GH_TOKEN.
  */
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -13,7 +13,6 @@ const token = process.env.GH_PAT || process.env.GH_TOKEN || process.env.GITHUB_T
 const login = process.env.GITHUB_ACTOR || "BK201-Drama";
 const FONT = "Arial, Helvetica, sans-serif";
 
-/** GitHub linguist-ish colors for common languages */
 const LANG_COLORS = {
   TypeScript: "#3178c6",
   JavaScript: "#f1e05a",
@@ -42,6 +41,7 @@ query($login: String!) {
     contributionsCollection {
       totalCommitContributions
       totalPullRequestContributions
+      totalRepositoriesWithContributedCommits
       contributionCalendar { totalContributions }
     }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
@@ -76,6 +76,7 @@ const cc = user.contributionsCollection;
 const contrib = cc.contributionCalendar.totalContributions;
 const commits = cc.totalCommitContributions;
 const prs = cc.totalPullRequestContributions;
+const reposTouched = cc.totalRepositoriesWithContributedCommits;
 
 const counts = new Map();
 for (const node of user.repositories.nodes) {
@@ -89,76 +90,103 @@ const langs = [...counts.entries()]
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 5);
 
-// Profile main column is ~900–940px; keep card slightly under that.
 const WIDTH = 920;
 const PAD = 16;
-const barX = PAD;
-const barW = WIDTH - PAD * 2;
-let x = barX;
-const segments = langs.map((lang, i) => {
-  const w = Math.max(3, Math.round((lang.pct / 100) * barW));
-  const fill = LANG_COLORS[lang.name] || FALLBACK_COLORS[i] || "#d0d7de";
-  const seg = {
-    name: lang.name,
-    pct: lang.pct,
-    x,
-    w,
-    fill,
-    label: `${Math.round(lang.pct)}%`,
-  };
-  x += w;
-  return seg;
-});
 
-const legendW = Math.floor(barW / Math.max(segments.length, 1));
-const legend = segments
-  .map((s, i) => {
-    const sx = PAD + i * legendW;
-    return [
-      `<circle cx="${sx + 4}" cy="98" r="3" fill="${s.fill}"/>`,
-      `<text x="${sx + 12}" y="101" font-family="${FONT}" font-size="11" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`,
-    ].join("\n  ");
-  })
-  .join("\n  ");
+function writeMetrics() {
+  const items = [
+    { value: contrib, label: "CONTRIBUTIONS" },
+    { value: commits, label: "COMMITS" },
+    { value: prs, label: "PULL REQUESTS" },
+    { value: reposTouched, label: "REPOS TOUCHED" },
+  ];
+  const colW = Math.floor((WIDTH - 2) / items.length);
+  const cells = items
+    .map((item, i) => {
+      const x = 1 + i * colW;
+      return `
+  <line x1="${x}" y1="1" x2="${x}" y2="71" stroke="#d4d4d0"/>
+  <text x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="#141414">${item.value}</text>
+  <text x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em" fill="#666666">${item.label}</text>`;
+    })
+    .join("");
 
-const bars = segments
-  .map((s) => `<rect x="${s.x}" y="80" width="${s.w}" height="7" fill="${s.fill}"/>`)
-  .join("\n  ");
-
-const colW = Math.floor(barW / 3);
-const cols = [
-  { value: contrib, label: "Contributions", x: PAD },
-  { value: commits, label: "Commits", x: PAD + colW },
-  { value: prs, label: "Pull requests", x: PAD + colW * 2 },
-];
-
-const metricTexts = cols
-  .map(
-    (m) =>
-      [
-        `<text x="${m.x}" y="28" font-family="${FONT}" font-size="22" font-weight="700" fill="#24292f">${m.value}</text>`,
-        `<text x="${m.x}" y="44" font-family="${FONT}" font-size="11" fill="#656d76">${m.label}</text>`,
-      ].join("\n  ")
-  )
-  .join("\n  ");
-
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="114" viewBox="0 0 ${WIDTH} 114" role="img" aria-label="GitHub overview">
-  <title>GitHub overview</title>
-  <rect width="${WIDTH}" height="114" rx="6" fill="#ffffff"/>
-  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="113" rx="6" fill="none" stroke="#d0d7de"/>
-  ${metricTexts}
-  <line x1="${PAD}" y1="56" x2="${WIDTH - PAD}" y2="56" stroke="#d0d7de"/>
-  <text x="${PAD}" y="72" font-family="${FONT}" font-size="11" font-weight="700" fill="#24292f">Top languages</text>
-  <rect x="${PAD}" y="80" width="${barW}" height="7" rx="2" fill="#f6f8fa"/>
-  ${bars}
-  ${legend}
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="72" viewBox="0 0 ${WIDTH} 72" role="img" aria-label="Selected metrics">
+  <title>Selected metrics</title>
+  <rect width="${WIDTH}" height="72" fill="#fafaf7"/>
+  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="71" fill="none" stroke="#d4d4d0"/>
+  ${cells}
 </svg>
 `;
+  writeFileSync(join(root, "profile", "metrics.svg"), svg);
+}
 
-const out = join(root, "profile", "github-overview.svg");
-mkdirSync(dirname(out), { recursive: true });
-writeFileSync(out, svg);
-console.log("Wrote", out, { contrib, commits, prs, langs });
+function writeLanguages() {
+  const rowH = 22;
+  const top = 8;
+  const height = top + langs.length * rowH + 8;
+  const labelW = 86;
+  const pctW = 36;
+  const trackX = PAD + labelW;
+  const trackW = WIDTH - PAD * 2 - labelW - pctW;
+  const rows = langs
+    .map((lang, i) => {
+      const y = top + i * rowH;
+      const fill = LANG_COLORS[lang.name] || FALLBACK_COLORS[i] || "#d0d7de";
+      const w = Math.max(4, Math.round((lang.pct / 100) * trackW));
+      const pct = `${Math.round(lang.pct)}%`;
+      return `
+  <text x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#333333">${escapeXml(lang.name)}</text>
+  <rect x="${trackX}" y="${y + 5}" width="${trackW}" height="6" fill="#e4e4de"/>
+  <rect x="${trackX}" y="${y + 5}" width="${w}" height="6" fill="${fill}"/>
+  <text x="${WIDTH - PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#666666" text-anchor="end">${pct}</text>`;
+    })
+    .join("");
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}" role="img" aria-label="Languages">
+  <title>Languages</title>
+  <rect width="${WIDTH}" height="${height}" fill="#ffffff"/>
+  ${rows}
+</svg>
+`;
+  // narrower card for sidebar use
+  const sideW = 360;
+  const sideTrackX = 90;
+  const sideTrackW = sideW - sideTrackX - 40;
+  const sideRows = langs
+    .map((lang, i) => {
+      const y = top + i * rowH;
+      const fill = LANG_COLORS[lang.name] || FALLBACK_COLORS[i] || "#d0d7de";
+      const w = Math.max(4, Math.round((lang.pct / 100) * sideTrackW));
+      const pct = `${Math.round(lang.pct)}%`;
+      return `
+  <text x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#333333">${escapeXml(lang.name)}</text>
+  <rect x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="6" fill="#e4e4de"/>
+  <rect x="${sideTrackX}" y="${y + 5}" width="${w}" height="6" fill="${fill}"/>
+  <text x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#666666" text-anchor="end">${pct}</text>`;
+    })
+    .join("");
+
+  const sideSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${sideW}" height="${height}" viewBox="0 0 ${sideW} ${height}" role="img" aria-label="Languages">
+  <title>Languages</title>
+  <rect width="${sideW}" height="${height}" fill="#ffffff"/>
+  ${sideRows}
+</svg>
+`;
+  writeFileSync(join(root, "profile", "languages.svg"), sideSvg);
+  writeFileSync(join(root, "profile", "github-overview.svg"), svg); // keep full-width variant
+}
+
+mkdirSync(join(root, "profile"), { recursive: true });
+writeMetrics();
+writeLanguages();
+console.log("Wrote metrics.svg + languages.svg", {
+  contrib,
+  commits,
+  prs,
+  reposTouched,
+  langs,
+});
 
 function escapeXml(s) {
   return String(s)
