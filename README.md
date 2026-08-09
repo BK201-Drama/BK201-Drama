@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <td valign="middle">
+    <td valign="middle" width="9999">
       <h1>Kaidi Lin</h1>
       <p>
         Full-stack · WeRide · Guangzhou<br />
@@ -13,7 +13,7 @@
         <code>BK201-Drama</code>
       </p>
     </td>
-    <td valign="middle">
+    <td valign="middle" nowrap>
       <img src="https://raw.githubusercontent.com/BK201-Drama/picBed/main/avatar/avatar.jpeg" width="96" height="96" alt="Kaidi Lin" />
     </td>
   </tr>
@@ -26,7 +26,7 @@
 
 ## GitHub
 
-<img src="./profile/github-overview.svg?v=13" alt="GitHub overview" width="720" />
+<img src="./profile/github-overview.svg?v=14" alt="GitHub overview" width="720" />
 
 ## Stack
 
