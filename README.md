@@ -36,9 +36,12 @@
 
 ## Metrics & Skills
 
-<img src="./profile/metrics.svg?v=3" alt="Selected metrics" width="920" />
-
 <table>
+  <tr>
+    <td colspan="2">
+      <img src="./profile/metrics.svg?v=3" alt="Selected metrics" width="920" />
+    </td>
+  </tr>
   <tr>
     <td valign="top" width="460">
       <p><b>LANGUAGES</b></p>
