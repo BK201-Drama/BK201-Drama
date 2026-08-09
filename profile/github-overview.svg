@@ -2,28 +2,28 @@
   <title>GitHub overview</title>
   <rect width="720" height="132" rx="6" fill="#ffffff"/>
   <rect x="0.5" y="0.5" width="719" height="131" rx="6" fill="none" stroke="#d0d7de"/>
-  <text x="16" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">1025</text>
+  <text x="16" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">1026</text>
   <text x="16" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Contributions</text>
-  <text x="248" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">976</text>
+  <text x="248" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">977</text>
   <text x="248" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Commits</text>
   <text x="480" y="34" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24292f">30</text>
   <text x="480" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656d76">Pull requests</text>
   <line x1="16" y1="66" x2="704" y2="66" stroke="#d0d7de"/>
   <text x="16" y="84" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#24292f">Top languages</text>
   <rect x="16" y="92" width="688" height="8" rx="2" fill="#f6f8fa"/>
-  <rect x="16" y="92" width="289" height="8" fill="#24292f"/>
-  <rect x="305" y="92" width="200" height="8" fill="#57606a"/>
-  <rect x="505" y="92" width="155" height="8" fill="#8c959f"/>
-  <rect x="660" y="92" width="22" height="8" fill="#afb8c1"/>
-  <rect x="682" y="92" width="22" height="8" fill="#d0d7de"/>
-  <circle cx="21" cy="112" r="3.5" fill="#24292f"/>
+  <rect x="16" y="92" width="289" height="8" fill="#3178c6"/>
+  <rect x="305" y="92" width="200" height="8" fill="#f1e05a"/>
+  <rect x="505" y="92" width="155" height="8" fill="#3572a5"/>
+  <rect x="660" y="92" width="22" height="8" fill="#e34c26"/>
+  <rect x="682" y="92" width="22" height="8" fill="#41b883"/>
+  <circle cx="21" cy="112" r="3.5" fill="#3178c6"/>
   <text x="30" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">TypeScript 42%</text>
-  <circle cx="158" cy="112" r="3.5" fill="#57606a"/>
+  <circle cx="158" cy="112" r="3.5" fill="#f1e05a"/>
   <text x="167" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">JavaScript 29%</text>
-  <circle cx="295" cy="112" r="3.5" fill="#8c959f"/>
+  <circle cx="295" cy="112" r="3.5" fill="#3572a5"/>
   <text x="304" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">Python 23%</text>
-  <circle cx="432" cy="112" r="3.5" fill="#afb8c1"/>
+  <circle cx="432" cy="112" r="3.5" fill="#e34c26"/>
   <text x="441" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">HTML 3%</text>
-  <circle cx="569" cy="112" r="3.5" fill="#d0d7de"/>
+  <circle cx="569" cy="112" r="3.5" fill="#41b883"/>
   <text x="578" y="116" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#57606a">Vue 3%</text>
 </svg>

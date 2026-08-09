@@ -11,9 +11,25 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const token = process.env.GH_PAT || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const login = process.env.GITHUB_ACTOR || "BK201-Drama";
-
-// Arial is the most consistent face inside GitHub-hosted SVGs.
 const FONT = "Arial, Helvetica, sans-serif";
+
+/** GitHub linguist-ish colors for common languages */
+const LANG_COLORS = {
+  TypeScript: "#3178c6",
+  JavaScript: "#f1e05a",
+  Python: "#3572a5",
+  HTML: "#e34c26",
+  Vue: "#41b883",
+  CSS: "#563d7c",
+  Go: "#00add8",
+  Rust: "#dea584",
+  Java: "#b07219",
+  Shell: "#89e051",
+  C: "#555555",
+  "C++": "#f34b7d",
+};
+
+const FALLBACK_COLORS = ["#24292f", "#57606a", "#8c959f", "#afb8c1", "#d0d7de"];
 
 if (!token) {
   console.error("Missing GH_PAT / GH_TOKEN / GITHUB_TOKEN");
@@ -73,18 +89,18 @@ const langs = [...counts.entries()]
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 5);
 
-const shades = ["#24292f", "#57606a", "#8c959f", "#afb8c1", "#d0d7de"];
 const barX = 16;
 const barW = 688;
 let x = barX;
 const segments = langs.map((lang, i) => {
   const w = Math.max(3, Math.round((lang.pct / 100) * barW));
+  const fill = LANG_COLORS[lang.name] || FALLBACK_COLORS[i] || "#d0d7de";
   const seg = {
     name: lang.name,
     pct: lang.pct,
     x,
     w,
-    fill: shades[i] || "#d0d7de",
+    fill,
     label: `${Math.round(lang.pct)}%`,
   };
   x += w;
