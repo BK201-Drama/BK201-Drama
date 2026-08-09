@@ -89,8 +89,11 @@ const langs = [...counts.entries()]
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 5);
 
-const barX = 16;
-const barW = 688;
+// Profile main column is ~880–900px; keep card slightly under that.
+const WIDTH = 880;
+const PAD = 16;
+const barX = PAD;
+const barW = WIDTH - PAD * 2;
 let x = barX;
 const segments = langs.map((lang, i) => {
   const w = Math.max(3, Math.round((lang.pct / 100) * barW));
@@ -107,10 +110,10 @@ const segments = langs.map((lang, i) => {
   return seg;
 });
 
-const legendW = Math.floor(688 / Math.max(segments.length, 1));
+const legendW = Math.floor(barW / Math.max(segments.length, 1));
 const legend = segments
   .map((s, i) => {
-    const sx = 14 + i * legendW;
+    const sx = PAD + i * legendW;
     return [
       `<circle cx="${sx + 4}" cy="98" r="3" fill="${s.fill}"/>`,
       `<text x="${sx + 12}" y="101" font-family="${FONT}" font-size="11" fill="#57606a">${escapeXml(s.name)} ${s.label}</text>`,
@@ -122,10 +125,11 @@ const bars = segments
   .map((s) => `<rect x="${s.x}" y="80" width="${s.w}" height="7" fill="${s.fill}"/>`)
   .join("\n  ");
 
+const colW = Math.floor(barW / 3);
 const cols = [
-  { value: contrib, label: "Contributions", x: 14 },
-  { value: commits, label: "Commits", x: 246 },
-  { value: prs, label: "Pull requests", x: 478 },
+  { value: contrib, label: "Contributions", x: PAD },
+  { value: commits, label: "Commits", x: PAD + colW },
+  { value: prs, label: "Pull requests", x: PAD + colW * 2 },
 ];
 
 const metricTexts = cols
@@ -138,14 +142,14 @@ const metricTexts = cols
   )
   .join("\n  ");
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="114" viewBox="0 0 720 114" role="img" aria-label="GitHub overview">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="114" viewBox="0 0 ${WIDTH} 114" role="img" aria-label="GitHub overview">
   <title>GitHub overview</title>
-  <rect width="720" height="114" rx="6" fill="#ffffff"/>
-  <rect x="0.5" y="0.5" width="719" height="113" rx="6" fill="none" stroke="#d0d7de"/>
+  <rect width="${WIDTH}" height="114" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="113" rx="6" fill="none" stroke="#d0d7de"/>
   ${metricTexts}
-  <line x1="14" y1="56" x2="706" y2="56" stroke="#d0d7de"/>
-  <text x="14" y="72" font-family="${FONT}" font-size="11" font-weight="700" fill="#24292f">Top languages</text>
-  <rect x="14" y="80" width="692" height="7" rx="2" fill="#f6f8fa"/>
+  <line x1="${PAD}" y1="56" x2="${WIDTH - PAD}" y2="56" stroke="#d0d7de"/>
+  <text x="${PAD}" y="72" font-family="${FONT}" font-size="11" font-weight="700" fill="#24292f">Top languages</text>
+  <rect x="${PAD}" y="80" width="${barW}" height="7" rx="2" fill="#f6f8fa"/>
   ${bars}
   ${legend}
 </svg>
