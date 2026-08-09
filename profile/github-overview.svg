@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="168" viewBox="0 0 720 168" role="img" aria-label="GitHub overview">
+  <title>GitHub overview</title>
+  <rect width="720" height="168" fill="#f6f6f4"/>
+  <rect x="0.5" y="0.5" width="719" height="167" fill="none" stroke="#d4d4d0"/>
+
+  <rect x="1" y="1" width="718" height="72" fill="#f0f0ec"/>
+  <line x1="1" y1="73" x2="719" y2="73" stroke="#d4d4d0"/>
+  <line x1="240" y1="1" x2="240" y2="73" stroke="#d4d4d0"/>
+  <line x1="480" y1="1" x2="480" y2="73" stroke="#d4d4d0"/>
+
+  <text x="20" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">1022</text>
+  <text x="20" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">CONTRIBUTIONS</text>
+
+  <text x="260" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">973</text>
+  <text x="260" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">COMMITS</text>
+
+  <text x="500" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="600" fill="#141414">30</text>
+  <text x="500" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">PULL REQUESTS</text>
+
+  <text x="20" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.08em" fill="#666666">TOP LANGUAGES</text>
+
+  <rect x="20" y="106" width="680" height="10" fill="#e4e4de"/>
+  <rect x="20" y="106" width="295" height="10" fill="#1a1a1a"/>
+  <rect x="315" y="106" width="181" height="10" fill="#4a4a4a"/>
+  <rect x="496" y="106" width="159" height="10" fill="#6e6e6e"/>
+  <rect x="655" y="106" width="23" height="10" fill="#929292"/>
+  <rect x="678" y="106" width="23" height="10" fill="#b6b6b6"/>
+  
+  <circle cx="24" cy="138" r="3.5" fill="#1a1a1a"/>
+  <text x="34" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">TypeScript 43%</text>
+  <circle cx="160" cy="138" r="3.5" fill="#4a4a4a"/>
+  <text x="170" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">JavaScript 27%</text>
+  <circle cx="296" cy="138" r="3.5" fill="#6e6e6e"/>
+  <text x="306" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">Python 23%</text>
+  <circle cx="432" cy="138" r="3.5" fill="#929292"/>
+  <text x="442" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">HTML 3%</text>
+  <circle cx="568" cy="138" r="3.5" fill="#b6b6b6"/>
+  <text x="578" y="142" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#333333">Vue 3%</text>
+</svg>
