@@ -34,42 +34,17 @@
 **B.Eng. Software Engineering** · South China University of Technology  
 `2019.09 — 2023.06`
 
-## Selected Metrics
+## Metrics & Skills
 
 <img src="./profile/metrics.svg?v=3" alt="Selected metrics" width="920" />
 
-## Projects & Skills
-
 <table>
   <tr>
-    <td valign="top" width="380">
-      <p>
-        <b>dataFountain_0.8961</b> · <code>Python</code><br />
-        个贷违约预测 · A榜 #72 · B榜 #61<br />
-        <img src="https://img.shields.io/badge/Competition-E8E8E8?style=flat-square" alt="Competition" />
-        <img src="https://img.shields.io/badge/ML-E8E8E8?style=flat-square" alt="ML" />
-      </p>
-      <p>
-        <b>learning-agent</b> · <code>TypeScript</code><br />
-        本地学习助手 · 当前主线<br />
-        <img src="https://img.shields.io/badge/Active-E8E8E8?style=flat-square" alt="Active" />
-        <img src="https://img.shields.io/badge/Agent-E8E8E8?style=flat-square" alt="Agent" />
-      </p>
-      <p>
-        <b>agent-farm-cli</b> · <code>TypeScript</code><br />
-        本地 agent 队列 / 执行基础设施<br />
-        <img src="https://img.shields.io/badge/Pinned-E8E8E8?style=flat-square" alt="Pinned" />
-        <img src="https://img.shields.io/badge/CLI-E8E8E8?style=flat-square" alt="CLI" />
-      </p>
-      <p>
-        <b>stock-dashboard</b> · <code>Python</code><br />
-        内部量化看板<br />
-        <img src="https://img.shields.io/badge/Side_system-E8E8E8?style=flat-square" alt="Side system" />
-      </p>
-    </td>
-    <td valign="top" width="540">
+    <td valign="top" width="460">
       <p><b>LANGUAGES</b></p>
-      <img src="./profile/languages.svg?v=3" alt="Languages" width="520" />
+      <img src="./profile/languages.svg?v=3" alt="Languages" width="440" />
+    </td>
+    <td valign="top" width="460">
       <p><b>FRONTEND</b><br />
         <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
         <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
