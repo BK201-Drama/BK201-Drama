@@ -41,15 +41,19 @@
 
 ## Metrics & Skills
 
-<img src="./profile/metrics.svg?v=5#gh-light-mode-only" alt="Selected metrics" width="920" />
-<img src="./profile/metrics-dark.svg?v=5#gh-dark-mode-only" alt="Selected metrics" width="920" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/metrics-dark.svg?v=6" />
+  <img src="./profile/metrics.svg?v=6" alt="Selected metrics" width="920" />
+</picture>
 
 <table>
   <tr>
     <td valign="top" width="460">
       <p><b>LANGUAGES</b></p>
-      <img src="./profile/languages.svg?v=5#gh-light-mode-only" alt="Languages" width="440" />
-      <img src="./profile/languages-dark.svg?v=5#gh-dark-mode-only" alt="Languages" width="440" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/languages-dark.svg?v=6" />
+        <img src="./profile/languages.svg?v=6" alt="Languages" width="440" />
+      </picture>
     </td>
     <td valign="top" width="460">
       <p><b>FRONTEND</b><br />

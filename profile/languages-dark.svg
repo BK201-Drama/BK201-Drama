@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="126" viewBox="0 0 520 126" role="img" aria-label="Languages">
   <title>Languages</title>
+  <rect width="520" height="126" fill="#0d1117"/>
   <text x="0" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#e6edf3">TypeScript</text>
   <rect x="104" y="13" width="376" height="7" fill="#30363d"/>
   <rect x="104" y="13" width="158" height="7" fill="#3178c6"/>
