@@ -13,11 +13,26 @@
         Guangzhou · GitHub since 2020
       </p>
       <p>
-        <img src="https://img.shields.io/badge/Vibe_Coder-E8E8E8?style=flat-square" alt="Vibe Coder" />
-        <img src="https://img.shields.io/badge/WeRide-E8E8E8?style=flat-square" alt="WeRide" />
-        <img src="https://img.shields.io/badge/weval-E8E8E8?style=flat-square" alt="weval" />
-        <img src="https://img.shields.io/badge/Org_EWorf-E8E8E8?style=flat-square" alt="Org EWorf" />
-        <img src="https://img.shields.io/badge/Focusing-E8E8E8?style=flat-square" alt="Focusing" />
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Vibe_Coder-E8E8E8?style=flat-square" />
+          <img src="https://img.shields.io/badge/Vibe_Coder-21262d?style=flat-square" alt="Vibe Coder" />
+        </picture>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/WeRide-E8E8E8?style=flat-square" />
+          <img src="https://img.shields.io/badge/WeRide-21262d?style=flat-square" alt="WeRide" />
+        </picture>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/weval-E8E8E8?style=flat-square" />
+          <img src="https://img.shields.io/badge/weval-21262d?style=flat-square" alt="weval" />
+        </picture>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Org_EWorf-E8E8E8?style=flat-square" />
+          <img src="https://img.shields.io/badge/Org_EWorf-21262d?style=flat-square" alt="Org EWorf" />
+        </picture>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Focusing-E8E8E8?style=flat-square" />
+          <img src="https://img.shields.io/badge/Focusing-21262d?style=flat-square" alt="Focusing" />
+        </picture>
       </p>
     </td>
     <td valign="middle" width="190" align="right">
@@ -42,8 +57,8 @@
 ## Metrics & Skills
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/metrics-dark.svg?v=6" />
-  <img src="./profile/metrics.svg?v=6" alt="Selected metrics" width="920" />
+  <source media="(prefers-color-scheme: light)" srcset="./profile/metrics.svg?v=7" />
+  <img src="./profile/metrics-dark.svg?v=7" alt="Selected metrics" width="920" />
 </picture>
 
 <table>
@@ -51,8 +66,8 @@
     <td valign="top" width="460">
       <p><b>LANGUAGES</b></p>
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./profile/languages-dark.svg?v=6" />
-        <img src="./profile/languages.svg?v=6" alt="Languages" width="440" />
+        <source media="(prefers-color-scheme: light)" srcset="./profile/languages.svg?v=7" />
+        <img src="./profile/languages-dark.svg?v=7" alt="Languages" width="440" />
       </picture>
     </td>
     <td valign="top" width="460">

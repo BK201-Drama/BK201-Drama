@@ -9,31 +9,31 @@
   .rule { stroke: #e4e4de; }
   @media (prefers-color-scheme: dark) {
     .bg { fill: #0d1117; }
-    .fg { fill: #e6edf3; }
-    .muted { fill: #8b949e; }
-    .track { fill: #30363d; }
-    .rule { stroke: #30363d; }
+    .fg { fill: #e6edf3 !important; }
+    .muted { fill: #8b949e !important; }
+    .track { fill: #30363d !important; }
+    .rule { stroke: #30363d !important; }
   }
 </style>
   <rect class="bg" width="520" height="126"/>
-  <text class="fg" x="0" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12">TypeScript</text>
-  <rect class="track" x="104" y="13" width="376" height="7"/>
+  <text class="fg" x="0" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">TypeScript</text>
+  <rect class="track" x="104" y="13" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="13" width="158" height="7" fill="#3178c6"/>
-  <text class="muted" x="520" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">42%</text>
-  <text class="fg" x="0" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12">JavaScript</text>
-  <rect class="track" x="104" y="35" width="376" height="7"/>
+  <text class="muted" x="520" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">42%</text>
+  <text class="fg" x="0" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">JavaScript</text>
+  <rect class="track" x="104" y="35" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="35" width="109" height="7" fill="#f1e05a"/>
-  <text class="muted" x="520" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">29%</text>
-  <text class="fg" x="0" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12">Python</text>
-  <rect class="track" x="104" y="57" width="376" height="7"/>
+  <text class="muted" x="520" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">29%</text>
+  <text class="fg" x="0" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">Python</text>
+  <rect class="track" x="104" y="57" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="57" width="85" height="7" fill="#3572a5"/>
-  <text class="muted" x="520" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">23%</text>
-  <text class="fg" x="0" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12">HTML</text>
-  <rect class="track" x="104" y="79" width="376" height="7"/>
+  <text class="muted" x="520" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">23%</text>
+  <text class="fg" x="0" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">HTML</text>
+  <rect class="track" x="104" y="79" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="79" width="12" height="7" fill="#e34c26"/>
-  <text class="muted" x="520" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">3%</text>
-  <text class="fg" x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12">Vue</text>
-  <rect class="track" x="104" y="101" width="376" height="7"/>
+  <text class="muted" x="520" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">3%</text>
+  <text class="fg" x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">Vue</text>
+  <rect class="track" x="104" y="101" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="101" width="12" height="7" fill="#41b883"/>
-  <text class="muted" x="520" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="end">3%</text>
+  <text class="muted" x="520" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">3%</text>
 </svg>
