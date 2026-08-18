@@ -9,21 +9,21 @@
   .rule { stroke: #e4e4de; }
   @media (prefers-color-scheme: dark) {
     .bg { fill: none; }
-    .fg { fill: #e6edf3; }
-    .muted { fill: #8b949e; }
-    .track { fill: #30363d; }
-    .rule { stroke: #30363d; }
+    .fg { fill: #e6edf3 !important; }
+    .muted { fill: #8b949e !important; }
+    .track { fill: #30363d !important; }
+    .rule { stroke: #30363d !important; }
   }
 </style>
-  <text class="fg" x="14" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">1042</text>
-  <text class="muted" x="14" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em">CONTRIBUTIONS</text>
-  <line class="rule" x1="230" y1="8" x2="230" y2="64"/>
-  <text class="fg" x="244" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">993</text>
-  <text class="muted" x="244" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em">COMMITS</text>
-  <line class="rule" x1="460" y1="8" x2="460" y2="64"/>
-  <text class="fg" x="474" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">30</text>
-  <text class="muted" x="474" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em">PULL REQUESTS</text>
-  <line class="rule" x1="690" y1="8" x2="690" y2="64"/>
-  <text class="fg" x="704" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">18</text>
-  <text class="muted" x="704" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em">REPOS TOUCHED</text>
+  <text class="fg" x="14" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#141414">1042</text>
+  <text class="muted" x="14" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#666666">CONTRIBUTIONS</text>
+  <line class="rule" x1="230" y1="8" x2="230" y2="64" stroke="#e4e4de"/>
+  <text class="fg" x="244" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#141414">993</text>
+  <text class="muted" x="244" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#666666">COMMITS</text>
+  <line class="rule" x1="460" y1="8" x2="460" y2="64" stroke="#e4e4de"/>
+  <text class="fg" x="474" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#141414">30</text>
+  <text class="muted" x="474" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#666666">PULL REQUESTS</text>
+  <line class="rule" x1="690" y1="8" x2="690" y2="64" stroke="#e4e4de"/>
+  <text class="fg" x="704" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#141414">18</text>
+  <text class="muted" x="704" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#666666">REPOS TOUCHED</text>
 </svg>

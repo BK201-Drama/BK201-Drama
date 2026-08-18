@@ -102,6 +102,8 @@ const WIDTH = 920;
 const PAD = 16;
 
 function themeStyle(withCanvas) {
+  // Inline fill on <text> is the fallback; !important lets dark mode
+  // override it when GitHub actually evaluates SVG CSS.
   return `<style>
   :root { color-scheme: light dark; }
   .bg { fill: none; }
@@ -111,10 +113,10 @@ function themeStyle(withCanvas) {
   .rule { stroke: #e4e4de; }
   @media (prefers-color-scheme: dark) {
     .bg { fill: ${withCanvas ? "#0d1117" : "none"}; }
-    .fg { fill: #e6edf3; }
-    .muted { fill: #8b949e; }
-    .track { fill: #30363d; }
-    .rule { stroke: #30363d; }
+    .fg { fill: #e6edf3 !important; }
+    .muted { fill: #8b949e !important; }
+    .track { fill: #30363d !important; }
+    .rule { stroke: #30363d !important; }
   }
 </style>`;
 }
@@ -146,8 +148,8 @@ function writeMetrics(themeName) {
   <line x1="${x}" y1="8" x2="${x}" y2="64" stroke="${theme.rule}"/>`;
       if (adaptive) {
         return `${divider}
-  <text class="fg" x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700">${item.value}</text>
-  <text class="muted" x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em">${item.label}</text>`;
+  <text class="fg" x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="${theme.fg}">${item.value}</text>
+  <text class="muted" x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em" fill="${theme.muted}">${item.label}</text>`;
       }
       return `${divider}
   <text x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="${theme.fg}">${item.value}</text>
@@ -182,10 +184,10 @@ function writeLanguages(themeName) {
       const pct = `${Math.round(lang.pct)}%`;
       if (adaptive) {
         return `
-  <text class="fg" x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12">${escapeXml(lang.name)}</text>
-  <rect class="track" x="${trackX}" y="${y + 5}" width="${trackW}" height="6"/>
+  <text class="fg" x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
+  <rect class="track" x="${trackX}" y="${y + 5}" width="${trackW}" height="6" fill="${theme.track}"/>
   <rect x="${trackX}" y="${y + 5}" width="${w}" height="6" fill="${fill}"/>
-  <text class="muted" x="${WIDTH - PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" text-anchor="end">${pct}</text>`;
+  <text class="muted" x="${WIDTH - PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.muted}" text-anchor="end">${pct}</text>`;
       }
       return `
   <text x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
@@ -218,10 +220,10 @@ function writeLanguages(themeName) {
       const pct = `${Math.round(lang.pct)}%`;
       if (adaptive) {
         return `
-  <text class="fg" x="0" y="${y + 12}" font-family="${FONT}" font-size="12">${escapeXml(lang.name)}</text>
-  <rect class="track" x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="7"/>
+  <text class="fg" x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
+  <rect class="track" x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="7" fill="${theme.track}"/>
   <rect x="${sideTrackX}" y="${y + 5}" width="${w}" height="7" fill="${fill}"/>
-  <text class="muted" x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" text-anchor="end">${pct}</text>`;
+  <text class="muted" x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.muted}" text-anchor="end">${pct}</text>`;
       }
       return `
   <text x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
