@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/metrics.svg profile/languages.svg profile/github-overview.svg
+          git add profile/metrics.svg profile/metrics-dark.svg profile/languages.svg profile/languages-dark.svg profile/github-overview.svg profile/github-overview-dark.svg
           git commit -m "chore(profile): update metrics and languages cards" || exit 0
           git push
