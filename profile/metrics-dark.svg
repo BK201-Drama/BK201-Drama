@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="72" viewBox="0 0 920 72" role="img" aria-label="Selected metrics">
+  <title>Selected metrics</title>
+  <text x="14" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e6edf3">1042</text>
+  <text x="14" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#8b949e">CONTRIBUTIONS</text>
+  <line x1="230" y1="8" x2="230" y2="64" stroke="#30363d"/>
+  <text x="244" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e6edf3">993</text>
+  <text x="244" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#8b949e">COMMITS</text>
+  <line x1="460" y1="8" x2="460" y2="64" stroke="#30363d"/>
+  <text x="474" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e6edf3">30</text>
+  <text x="474" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#8b949e">PULL REQUESTS</text>
+  <line x1="690" y1="8" x2="690" y2="64" stroke="#30363d"/>
+  <text x="704" y="34" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e6edf3">18</text>
+  <text x="704" y="52" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.06em" fill="#8b949e">REPOS TOUCHED</text>
+</svg>

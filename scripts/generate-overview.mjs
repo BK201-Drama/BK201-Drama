@@ -2,6 +2,9 @@
 /**
  * Regenerates profile SVGs from GitHub GraphQL stats.
  * Prefer GH_PAT (private-aware). Falls back to GITHUB_TOKEN / GH_TOKEN.
+ *
+ * Emits light + dark pairs so README can switch with
+ * #gh-light-mode-only / #gh-dark-mode-only (GitHub appearance, not OS).
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -29,6 +32,11 @@ const LANG_COLORS = {
 };
 
 const FALLBACK_COLORS = ["#24292f", "#57606a", "#8c959f", "#afb8c1", "#d0d7de"];
+
+const THEMES = {
+  light: { fg: "#141414", muted: "#666666", track: "#e4e4de", rule: "#e4e4de" },
+  dark: { fg: "#e6edf3", muted: "#8b949e", track: "#30363d", rule: "#30363d" },
+};
 
 if (!token) {
   console.error("Missing GH_PAT / GH_TOKEN / GITHUB_TOKEN");
@@ -93,7 +101,12 @@ const langs = [...counts.entries()]
 const WIDTH = 920;
 const PAD = 16;
 
-function writeMetrics() {
+function themeSuffix(themeName) {
+  return themeName === "dark" ? "-dark" : "";
+}
+
+function writeMetrics(themeName) {
+  const theme = THEMES[themeName];
   const items = [
     { value: contrib, label: "CONTRIBUTIONS" },
     { value: commits, label: "COMMITS" },
@@ -108,10 +121,10 @@ function writeMetrics() {
         i === 0
           ? ""
           : `
-  <line x1="${x}" y1="8" x2="${x}" y2="64" stroke="#e4e4de"/>`;
+  <line x1="${x}" y1="8" x2="${x}" y2="64" stroke="${theme.rule}"/>`;
       return `${divider}
-  <text x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="#141414">${item.value}</text>
-  <text x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em" fill="#666666">${item.label}</text>`;
+  <text x="${x + 14}" y="34" font-family="${FONT}" font-size="26" font-weight="700" fill="${theme.fg}">${item.value}</text>
+  <text x="${x + 14}" y="52" font-family="${FONT}" font-size="10" letter-spacing="0.06em" fill="${theme.muted}">${item.label}</text>`;
     })
     .join("");
 
@@ -121,10 +134,11 @@ function writeMetrics() {
   ${cells}
 </svg>
 `;
-  writeFileSync(join(root, "profile", "metrics.svg"), svg);
+  writeFileSync(join(root, "profile", `metrics${themeSuffix(themeName)}.svg`), svg);
 }
 
-function writeLanguages() {
+function writeLanguages(themeName) {
+  const theme = THEMES[themeName];
   const rowH = 22;
   const top = 8;
   const height = top + langs.length * rowH + 8;
@@ -139,20 +153,19 @@ function writeLanguages() {
       const w = Math.max(4, Math.round((lang.pct / 100) * trackW));
       const pct = `${Math.round(lang.pct)}%`;
       return `
-  <text x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#333333">${escapeXml(lang.name)}</text>
-  <rect x="${trackX}" y="${y + 5}" width="${trackW}" height="6" fill="#e4e4de"/>
+  <text x="${PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
+  <rect x="${trackX}" y="${y + 5}" width="${trackW}" height="6" fill="${theme.track}"/>
   <rect x="${trackX}" y="${y + 5}" width="${w}" height="6" fill="${fill}"/>
-  <text x="${WIDTH - PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#666666" text-anchor="end">${pct}</text>`;
+  <text x="${WIDTH - PAD}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.muted}" text-anchor="end">${pct}</text>`;
     })
     .join("");
 
+  // Transparent canvas so GitHub page background shows through.
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}" role="img" aria-label="Languages">
   <title>Languages</title>
-  <rect width="${WIDTH}" height="${height}" fill="#ffffff"/>
   ${rows}
 </svg>
 `;
-  // Skills-column language bars (wider)
   const sideW = 520;
   const sideLabelW = 96;
   const sidePctW = 40;
@@ -165,27 +178,28 @@ function writeLanguages() {
       const w = Math.max(4, Math.round((lang.pct / 100) * sideTrackW));
       const pct = `${Math.round(lang.pct)}%`;
       return `
-  <text x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#333333">${escapeXml(lang.name)}</text>
-  <rect x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="7" fill="#e4e4de"/>
+  <text x="0" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.fg}">${escapeXml(lang.name)}</text>
+  <rect x="${sideTrackX}" y="${y + 5}" width="${sideTrackW}" height="7" fill="${theme.track}"/>
   <rect x="${sideTrackX}" y="${y + 5}" width="${w}" height="7" fill="${fill}"/>
-  <text x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="#666666" text-anchor="end">${pct}</text>`;
+  <text x="${sideW}" y="${y + 12}" font-family="${FONT}" font-size="12" fill="${theme.muted}" text-anchor="end">${pct}</text>`;
     })
     .join("");
 
   const sideSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${sideW}" height="${height}" viewBox="0 0 ${sideW} ${height}" role="img" aria-label="Languages">
   <title>Languages</title>
-  <rect width="${sideW}" height="${height}" fill="#ffffff"/>
   ${sideRows}
 </svg>
 `;
-  writeFileSync(join(root, "profile", "languages.svg"), sideSvg);
-  writeFileSync(join(root, "profile", "github-overview.svg"), svg);
+  writeFileSync(join(root, "profile", `languages${themeSuffix(themeName)}.svg`), sideSvg);
+  writeFileSync(join(root, "profile", `github-overview${themeSuffix(themeName)}.svg`), svg);
 }
 
 mkdirSync(join(root, "profile"), { recursive: true });
-writeMetrics();
-writeLanguages();
-console.log("Wrote metrics.svg + languages.svg", {
+for (const themeName of Object.keys(THEMES)) {
+  writeMetrics(themeName);
+  writeLanguages(themeName);
+}
+console.log("Wrote light/dark metrics + languages cards", {
   contrib,
   commits,
   prs,

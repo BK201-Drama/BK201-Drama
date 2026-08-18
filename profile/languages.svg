@@ -1,24 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="126" viewBox="0 0 520 126" role="img" aria-label="Languages">
   <title>Languages</title>
-  <rect width="520" height="126" fill="#ffffff"/>
-  
-  <text x="0" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">TypeScript</text>
+  <text x="0" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">TypeScript</text>
   <rect x="104" y="13" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="13" width="158" height="7" fill="#3178c6"/>
   <text x="520" y="20" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">42%</text>
-  <text x="0" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">JavaScript</text>
+  <text x="0" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">JavaScript</text>
   <rect x="104" y="35" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="35" width="109" height="7" fill="#f1e05a"/>
   <text x="520" y="42" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">29%</text>
-  <text x="0" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">Python</text>
+  <text x="0" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">Python</text>
   <rect x="104" y="57" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="57" width="85" height="7" fill="#3572a5"/>
   <text x="520" y="64" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">23%</text>
-  <text x="0" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">HTML</text>
+  <text x="0" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">HTML</text>
   <rect x="104" y="79" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="79" width="12" height="7" fill="#e34c26"/>
   <text x="520" y="86" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">3%</text>
-  <text x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">Vue</text>
+  <text x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#141414">Vue</text>
   <rect x="104" y="101" width="376" height="7" fill="#e4e4de"/>
   <rect x="104" y="101" width="12" height="7" fill="#41b883"/>
   <text x="520" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#666666" text-anchor="end">3%</text>
